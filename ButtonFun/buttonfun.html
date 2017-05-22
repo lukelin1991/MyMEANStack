@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Button Fun</title>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous">
+    </script>
+    <button>BIG BUTTON!!!</button>
+
+    <script type="text/javascript">
+    $(document).on('click', 'button', function(){
+    	$(this).toggleClass("red");
+    });
+    $("button").hover(function(){
+    	$(this).addClass("green")
+    }, function(){ $(this).removeClass("green") });
+    </script>
+    <style type="text/css">
+    button{
+    	background-color: blue;
+    	color: white;
+      padding: 5px, 5px, 5px, 5px;
+      border-radius: 40px;
+      margin: 500px, 5px, 5px, 5px;
+      width: 100px;
+      height: 100px;
+    }
+    .red{
+    	background-color: red;
+    }
+    .green{
+    	background-color: green;
+    }
+    </style>
+  </head>
+  <body>
+  </body>
+</html>
